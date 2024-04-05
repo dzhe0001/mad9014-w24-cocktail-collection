@@ -147,7 +147,7 @@ function init() {
     if (data.length === 0) {
       title.hide();
       return genError(
-        "You haven't added anything to your favourites yet 🫠",
+        "You haven't added anything to your favorites yet 🫠",
         "Use search to find something",
         true
       );
@@ -179,6 +179,7 @@ function init() {
 
   function drawCocktails(data) {
     if (!data || data.length === 0) {
+      title.hide();
       return genError("No drinks were found 😰", null, true);
     }
 
